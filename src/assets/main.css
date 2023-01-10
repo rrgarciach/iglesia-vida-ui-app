@@ -246,7 +246,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: var(--color-text-white-to-black);
 		color: #000000;
 	}
 

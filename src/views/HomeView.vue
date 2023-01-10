@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import ContactForm from '../components/ContactForm.vue'
 </script>
 
 <template>
@@ -58,57 +58,30 @@ import TheWelcome from '../components/TheWelcome.vue'
 		<br><br>
 			<h2 style="color: #666; letter-spacing: 10px;">DAR</h2>
 			<H4 style="color: #666; letter-spacing: 10px;">TENEMOS DIFERENTES FORMAS DE DAR</H4>
-			<a href="dar/"><div class="boton" style="max-width: 400px;">VER OPCIONES</div></a>
+			<a href="/dar"><div class="boton" style="max-width: 400px;">VER OPCIONES</div></a>
 		</section>
 	
 		<section style="overflow: auto; clear: both;">
 			<a href="#contacto">
 			<div class="split">
-				<img src="new/orar.png" width="100%" height="auto" alt=""/> 
+				<img src="src/assets/images/orar.png" width="100%" height="auto" alt=""/> 
 			</div>
 			</a>
 			<div class="split">
-				<a href="plan.login.php"><img src="new/plan.png" width="100%" height="auto" alt=""/></a>
+				<a href="plan.login.php"><img src="src/assets/images/plan.png" width="100%" height="auto" alt=""/></a>
 			</div>
 		</section>
 		
 		<section>
 			<div class="central">
-				<a href="http://reformacentral.iglesiavida.mx"><img src="new/rcentral.png" style="max-width:700px; min-width: 250px;" width="100%" height="auto" alt=""/></a>
+				<a href="http://reformacentral.iglesiavida.mx"><img class="hidden" src="src/assets/images/rcentral.png" style="max-width:700px; min-width: 250px;" width="100%" height="auto" alt=""/></a>
 				<br><br><a href="reformacentral/formulario.php"><div class="boton" style="max-width: 400px;">INSCRÍBETE YA!</div></a>
 			</div>
 		</section>
 		
 		
 		<a name="contacto"></a>
-		<section class="wrapper style1 align-center" style="margin-top: 0px; clear: both; background: #e9e9e9;">
-			<br><br>
-			<div class="inner medium" style="padding: 10px;">
-				<h2 style="letter-spacing: 10px;">Escríbenos</h2>
-				<form method="post" name="formdata" id="formdata">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Nombre</label>
-							<input type="text" name="nombre" id="nombre" form="formdata" value="" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="email" name="correo" id="correo" form="formdata" value="" />
-						</div>
-						<div class="field">
-							<label for="message">Mensaje</label>
-							<textarea name="mensaje" id="mensaje" form="formdata" rows="6"></textarea>
-						</div>
-					</div>
-					<ul class="actions special">
-						<li><input type="button" name="enviar" id="enviar" value="Enviar"/></li>
-					</ul>
-					<div id="carga" style="clear: both;"></div>
-					<div id="mensaje2" style="clear: both;"></div>
-				</form>
-
-			</div>
-		</section>
+		<ContactForm />
   </main>
 </template>
 
@@ -136,6 +109,10 @@ body
     float: left;
     width: 50%;
   }
+  .hidden{
+    visibility: hidden;
+  }
+  
   @media screen and (max-width: 900px) {
     .fotos{
         height: 130px;
@@ -145,6 +122,10 @@ body
     text-align: center; 
     margin: 30px; 
     clear: both;
+    background-image: var(--logo-central);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 25px;
   }
   }
   @media screen and (max-width: 480px) {
@@ -156,8 +137,8 @@ body
   .boton{
     width: 50%;
     min-width: 300px;
-    background: #000;
-    color:#fff;
+    background: var(--color-text-black-to-white);
+    color: var(--color-text-white-to-black);
     padding: 15px;
     margin: 25px auto;
   }

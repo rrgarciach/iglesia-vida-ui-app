@@ -21,6 +21,9 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
   --vt-c-logo-black-url: url('src/assets/images/logo.vida.black.png');
   --vt-c-logo-white-url: url('src/assets/images/logo.vida.white.png');
+
+  --vt-c-logo-central-black-url: url('src/assets/images/rcentral-black.png');
+  --vt-c-logo-central-white-url: url('src/assets/images/rcentral-white.png');
 }
 
 /* semantic color variables for this project */
@@ -34,9 +37,14 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+  --color-text-white-to-black: var(--vt-c-white);
+  --color-text-black-to-white: var(--vt-c-black);
+
 
   --section-gap: 160px;
+
   --logo: var(--vt-c-logo-black-url);
+  --logo-central: var(--vt-c-logo-central-black-url);
 
 }
 
@@ -51,8 +59,14 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+    --color-text-white-to-black: var(--vt-c-black);
+    --color-text-black-to-white: var(--vt-c-white);
+
+
 
     --logo: var(--vt-c-logo-white-url);
+
+    --logo-central: var(--vt-c-logo-central-white-url);
   }
 }
 

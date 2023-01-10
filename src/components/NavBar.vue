@@ -12,7 +12,7 @@
 			<li><a href="equipo.php">CASA</a></li>
             <li><a href="mensajes.php">MENSAJES</a></li>
             <li><a href="campus.php">CAMPUS</a></li>
-            <li><a href="dar/">DAR</a></li>
+            <li><a href="/dar">DAR</a></li>
             <li><a href="/libreria/">REGISTRO</a></li>
 	  </ul>
 	</nav>
@@ -22,11 +22,11 @@
 <!-- MENU MOVIL-->
 <header id="header" class="alt">
 <nav style="color: #333;">
-		<a href="#menu" style="color: #333; text-decoration: none;">Menu</a>
+		<a href="#menu" style="text-decoration: none;"><span class="black-white">Menu</span></a>
 	</nav>
 </header>
  
-<nav2 id="menu">
+<nav id="menu">
 	<ul class="links">
 		<li><a href="index.php"><span class="item-menu">INICIO</span></a></li>
 		<li><a href="equipo.php"><span class="item-menu">CASA</span></a></li>
@@ -34,16 +34,17 @@
 		<li><a href="campus.php"><span class="item-menu">CAMPUS</span></a></li>
 		<li><a href="dar/"><span class="item-menu">DAR</span></a></li>
 		<li><a href="registro/"><span class="item-menu">REGISTRO</span></a></li>
+		<li><a href="#contacto" class="button primary fit">CONTACTO</a></li>	
 	</ul>
-	<ul class="actions stacked">
-		<li><a href="index.php#contacto" class="button primary fit">CONTACTO</a></li>				
-	</ul>
-</nav2>
+</nav>
 </template>
 
 <style scoped>
 .item-menu{
-    color: var(--color-text);
+    color: var(--vt-c-white);
+}
+.black-white{
+	color: var(--color-text-black-to-white);
 }
 .hidden{
     visibility: hidden;
