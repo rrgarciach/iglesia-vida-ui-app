@@ -1,5 +1,28 @@
-<script setup lang="ts">
+<script lang="ts">
+import type { counter } from '@fortawesome/fontawesome-svg-core';
+import { defineComponent } from 'vue'
 import ContactForm from '../components/ContactForm.vue'
+import axios from "axios"
+
+export default defineComponent({
+  data() {
+    return{
+      htmlYT: "",
+      iframeYT: "",
+    }
+  },
+  methods:{
+    async fetchYT(){
+      const response = await axios.get('https://iglesiavida.mx/youtube.api.main2.php')
+      this.htmlYT = response.data
+      this.iframeYT = '<iframe width="100%" height="100%" style="max-width: 1280px; max-height: 720px;" src="https://www.youtube.com/embed/'+this.htmlYT.videoID+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      console.log(this.htmlYT)
+    }
+  },
+  created: function() {
+    this.fetchYT();
+  },
+})
 </script>
 
 <template>
@@ -44,12 +67,16 @@ import ContactForm from '../components/ContactForm.vue'
             </a>
             </div>
             
-            <a href="enlinea/">
+            
               <div class="split">
-                <h4 style="color: #666; letter-spacing: 10px;">ÚLTIMA PREDICACIÓN</h4>
                 
+                <h3 style="letter-spacing: 2px;">{{ htmlYT.title }}</h3>
+                <div class="video-container">
+                  
+                  <div class="frame" v-html="iframeYT"></div>
+                  
+                </div>
               </div>
-            </a>
         </div>
       </div>
     </div>
@@ -163,5 +190,32 @@ body
     .fotolinea{
       padding-top:15px;
     }
-}			
+}
+.yt-item{
+		width: 50%;
+		float: left;
+		display: inline-block;
+		margin: 20px 0px;
+		padding: 50px;
+	}
+	@media screen and (max-width:800px){
+		.yt-item{
+		width: 100%;
+		float: none;
+		display: inline-block;
+			padding: 10px;
+	}
+}
+.video-container {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+}
+.video-container .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>

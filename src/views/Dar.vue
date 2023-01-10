@@ -47,7 +47,14 @@
 </template>
 
 <style scoped>
-
+@media screen and (max-width:1000px){
+    .split{
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+    }
+}
 .circle-center{
     border: 1px solid #666;
     border-radius: 50%;
