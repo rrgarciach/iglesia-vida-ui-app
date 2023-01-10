@@ -7,7 +7,11 @@ import axios from "axios"
 export default defineComponent({
   data() {
     return{
-      htmlYT: "",
+      content:{},
+      htmlYT: {
+        title: "",
+        videoID: "",
+      },
       iframeYT: "",
     }
   },
