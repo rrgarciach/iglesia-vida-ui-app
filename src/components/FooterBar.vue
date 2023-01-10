@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 
 </script>
 
@@ -7,14 +9,13 @@
     background: linear-gradient(0deg, rgba(31,34,56,1) 0%, rgba(43,53,83,1) 74%);">
         <div class="pie">
             <div class="split logopie">
-                <img src="src/assets/images/logo.low.png" class="fotopie" width="100%" height="auto" alt=""/>
+                <img src="src/assets/images/logo.low.png" class="fotopie" width="100%" height="200px" alt=""/>
             </div>
             <div class="split redespie" style="text-align: center;">
                 <div style="display: inline-block">
-                    <div class="itempie"><a href="https://youtube.com/iglesiavidamx" target="_blank"><i class="fab fa-youtube"></i></a></div>
-                    <div class="itempie"><a href="https://instagram.com/iglesiavida.mx" target="_blank"><i class="fab fa-instagram"></i></a></div>
-                    <div class="itempie"><a href="https://facebook.com/iglesiavida.mx" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
-                    <div class="itempie"><a href="https://seal.godaddy.com/verifySeal?sealID=KMwUBD66gZjSnyDEcvc7lLfgU0bvWMf3Qk3fUzlaITaG2T0RNFY0ITmHf3N6" target="_blank"><img src="src/assets/images/icons8-security-ssl-90.png" width="40" height="40" alt=""/></a></div>
+                    <a href="https://youtube.com/iglesiavidamx" target="_blank"><div class="itempie"><FontAwesomeIcon icon="fa-brands fa-youtube"></FontAwesomeIcon></div></a>
+                    <a href="https://instagram.com/iglesiavida.mx" target="_blank"><div class="itempie"><FontAwesomeIcon icon="fa-brands fa-instagram"></FontAwesomeIcon></div></a>
+                    <a href="https://facebook.com/iglesiavida.mx" target="_blank"><div class="itempie"><FontAwesomeIcon icon="fa-brands fa-facebook-f"></FontAwesomeIcon></div></a>
                 </div>
             </div>
         </div>
@@ -22,6 +23,11 @@
 </template>
 
 <style>
+.split{
+    float: left;
+    width: 50%;
+  }
+
 .pie{
     padding-top: 30px;
     padding-left: 50px;
@@ -29,6 +35,7 @@
 }
 .fotopie{
     width: 300px;
+    height: auto;
 }
 .logopie{
     text-align: left;
@@ -45,9 +52,11 @@
 }
 @media screen and (max-width:1000px){
     .redespie{
+        width: 100%;
         text-align: center;
         padding: 0px;
         padding-top: 10px;
+        margin: 0px auto;
     }
     .logopie{
         float: none;

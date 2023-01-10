@@ -8235,7 +8235,7 @@ input, select, textarea {
 		}
 
 	.items.style1 > * {
-		border-color: rgba(0, 0, 0, 0.2);
+		border-color: var(--color-text)
 	}
 
 	.items.style2 {
