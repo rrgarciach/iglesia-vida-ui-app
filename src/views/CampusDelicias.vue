@@ -1,0 +1,188 @@
+<script setup lang="ts">
+import ContactForm from '@/components/ContactForm.vue';
+
+</script>
+
+<template>
+    
+<!-- Wrapper -->
+<div id="wrapper" class="divided">
+    <p>&nbsp;</p>
+    <ul class="actions special">
+        <i class=""></i>
+        <li><a href="index.php" class="button primary icon solid fa fa-home" style="font-size: 16px; padding: 10px;">Regresar</a></li>
+    </ul>
+    <!-- Five -->
+    <section class="wrapper style1 align-center">
+        <div class="inner">
+            <h3>CAMPUS DELICIAS</h3>
+        </div>
+    </section>
+    <section class="wrapper style1 align-center">
+        
+        <section class="wrapper style1 align-center">
+            <div class="inner" style="margin: 0px; padding: 0px; width: 100%">
+                <div class="gallery style2 medium lightbox onscroll-fade-in">
+                    <article>
+                        <a href="src/assets/images/campus/delicias/1.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/1.jpg" alt="" />
+                        </a>
+                    </article>
+                    <article>
+                        <a href="src/assets/images/campus/delicias/2.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/2.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/3.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/3.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/4.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/4.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/5.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/5.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/6.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/6.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/7.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/7.jpg" alt="" />
+                        </a>
+                    </article>
+                        <article>
+                        <a href="src/assets/images/campus/delicias/8.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/8.jpg" alt="" />
+                        </a>
+                    </article>
+                            <article>
+                        <a href="src/assets/images/campus/delicias/9.jpg" class="image">
+                            <img src="src/assets/images/campus/delicias/9.jpg" alt="" />
+                        </a>
+                    </article>
+                
+                </div>
+                <div class="items style1 medium onscroll-fade-in">
+                    <section>
+                        <h3>Ubicación</h3>
+                        <p style="font-weight: 400;">Calle Central Sur #3001 en Col. Haciendas del Valle</p>
+                        <ul class="actions fit small align-center">
+                            <li><a href="https://goo.gl/maps/8yNWpQcPHTtqtPpy9" class="button primary fit small align-center" target="_blank">Mapa</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <!--<span class="icon solid style2 major fa-save"></span>-->
+                        <h3>Horarios</h3>
+                        <p style="font-weight: 400;">Oficinas abiertas<br>Lunes a Viernes de 8:30am a 2pm <br><br>Reuniones <br>Miercoles 7pm<br>Domingo 12pm</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+            <!-- Seven -->
+                
+
+
+        <section>
+            <div id="map"></div>
+        </section>
+    </section>					
+</div>
+</template>
+
+<style scoped>
+    .clear{
+        clear: left;
+        padding: 20px;
+    }
+    a{
+        color: #fff;
+        text-decoration:none;
+    }
+    h3{
+        letter-spacing:2px;
+        color: var(--color-text-black-to-white);
+        text-align: center;
+    }
+    p{
+        letter-spacing:2px;
+    }
+    h2{
+        letter-spacing:2px;
+    }
+    h1{
+        letter-spacing:2px;
+    }
+    .central{
+        margin: 0 auto; 
+        text-align: center; 
+        margin: 150px; 
+        clear: both;
+    }
+    .fotos{
+        float: left; 
+        width: 33.33%; 
+        height: 350px;
+    }
+    .split{
+        float: left;
+        width: 50%;
+    }
+    @media screen and (max-width: 900px) {
+        .fotos{
+                height: 130px;
+            }
+        .central{
+        margin: 0 auto; 
+        text-align: center; 
+        margin: 30px; 
+        clear: both;
+    }
+    }
+    @media screen and (max-width: 480px) {
+        .fotos{
+                
+                height: 130px;
+            }
+    }
+    .boton{
+        width: 50%;
+        min-width: 300px;
+        background: var(--color-text-black-to-white);
+        color: var(--color-text-white-to-black);
+        padding: 15px;
+        margin: 25px auto;
+    }
+    .fotolinea{
+        padding-top:65px;
+    }
+    @media screen and (min-width:1300px){
+        .boton{
+            min-width: 420px;
+        }
+        .fotolinea{
+        padding-top:35px;
+        }
+    }
+    @media screen and (max-width:1000px){
+        .split{
+            width: 100%;
+            float: none;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        .fotolinea{
+            padding-top:15px;
+        }
+    }
+    
+		
+</style>
