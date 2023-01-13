@@ -1,9 +1,15 @@
+import MensajesVue from '@/views/Mensajes.vue'
 import CampusDeliciasVue from '@/views/CampusDelicias.vue'
+import CampusChihuahuaVue from '@/views/CampusChihuahua.vue'
+import CampusCuauhtemocVue from '@/views/CampusCuauhtemoc.vue'
+import CampusParralVue from '@/views/CampusParral.vue'
+import RegistroVue from '@/views/Registro.vue'
 import CampusMainVue from '@/views/CampusMain.vue'
 import CasaVue from '@/views/Casa.vue'
-import { createRouter, createWebHistory } from 'vue-router'
 import DarVue from '../views/Dar.vue'
 import HomeView from '../views/HomeView.vue'
+
+import { createRouter, createWebHistory } from 'vue-router'
 
 
 const router = createRouter({
@@ -42,6 +48,46 @@ const router = createRouter({
       path: '/campus-delicias',
       name: 'campusdelicias',
       component: CampusDeliciasVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/campus-chihuahua',
+      name: 'campuschihuahua',
+      component: CampusChihuahuaVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/campus-cuauhtemoc',
+      name: 'campuscuauhtemoc',
+      component: CampusCuauhtemocVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/campus-parral',
+      name: 'campusparral',
+      component: CampusParralVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/registro',
+      name: 'registro',
+      component: RegistroVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/mensajes',
+      name: 'mensajes',
+      component: MensajesVue
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

@@ -1,23 +1,19 @@
 <script setup lang="ts">
 import ContactForm from '@/components/ContactForm.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
-
 </script>
 
 <template>
-    
 <!-- Wrapper -->
-<div id="wrapper" class="divided">
-    
     <ul class="actions special">
         <li><a href="/" class="button primary padd"> <FontAwesomeIcon icon="fa-solid fa-home"></FontAwesomeIcon> Regresar</a></li>
     </ul>
     <!-- Five -->
-    <section class="align-center">
-        <div class="inner"><br/>
-            <h3>CAMPUS DELICIAS</h3>
-            <br/>
+    <section class="wrapper2 style1 align-center">
+        <div class="inner">
+            <p>&nbsp;</p>
+            <h3>CAMPUS CUAUHTÉMOC</h3>
+            <p>&nbsp;</p>
         </div>
     </section>
     <section class="wrapper style1 align-center">
@@ -26,48 +22,48 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             <div class="inner" style="margin: 0px; padding: 0px; width: 100%">
                 <div class="gallery style2 medium lightbox onscroll-fade-in">
                     <article>
-                        <a href="src/assets/images/campus/delicias/1.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/1.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/1.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/1.jpg" alt="" />
                         </a>
                     </article>
                     <article>
-                        <a href="src/assets/images/campus/delicias/2.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/2.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/2.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/2.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/3.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/3.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/3.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/3.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/4.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/4.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/4.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/4.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/5.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/5.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/5.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/5.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/6.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/6.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/6.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/6.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/7.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/7.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/7.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/7.jpg" alt="" />
                         </a>
                     </article>
                         <article>
-                        <a href="src/assets/images/campus/delicias/8.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/8.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/8.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/8.jpg" alt="" />
                         </a>
                     </article>
                             <article>
-                        <a href="src/assets/images/campus/delicias/9.jpg" class="image">
-                            <img src="src/assets/images/campus/delicias/9.jpg" alt="" />
+                        <a href="src/assets/images/campus/cuauh/9.jpg" class="image">
+                            <img src="src/assets/images/campus/cuauh/9.jpg" alt="" />
                         </a>
                     </article>
                 
@@ -75,15 +71,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                 <div class="items style1 medium onscroll-fade-in">
                     <section>
                         <h3>Ubicación</h3>
-                        <p style="font-weight: 400;">Calle Central Sur #3001 en Col. Haciendas del Valle</p>
+                        <p style="font-weight: 400;">Avenida Aldama #1255 Col. Centro</p>
                         <ul class="actions fit small align-center">
-                            <li><a href="https://goo.gl/maps/8yNWpQcPHTtqtPpy9" class="button primary fit small align-center" target="_blank">Mapa</a></li>
+                            <li><a href="https://goo.gl/maps/rVZyMmEMFDzb14hZ9" class="button primary fit small align-center">Mapa</a></li>
                         </ul>
                     </section>
                     <section>
                         <!--<span class="icon solid style2 major fa-save"></span>-->
                         <h3>Horarios</h3>
-                        <p style="font-weight: 400;">Oficinas abiertas<br>Lunes a Viernes de 8:30am a 2pm <br><br>Reuniones <br>Miercoles 7pm<br>Domingo 12pm</p>
+                        <p style="font-weight: 400;">Reunión de oración<br> Miércoles 8pm<br><br>Reunión General <br>Domingo 12pm <br><br> Jóvenes Sábado 6pm</p>
                     </section>
                 </div>
             </div>
@@ -96,7 +92,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             <div id="map"></div>
         </section>
     </section>					
-</div>
 </template>
 
 <style scoped>

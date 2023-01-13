@@ -3,8 +3,8 @@
 
 <template>
 <!-- MENU NORMAL -->
-<div class="menucontain" style="font-family: 'Lemon/Milk light Regular';">
-	<a href="/"><div class="logotop"><img class="hidden" src="src/assets/images/logo.vida.black.png" width="100%" height="auto" alt="" style="max-width: 170px;" /></div></a>
+<div class="menucontain2" style="font-family: 'Lemon/Milk light Regular';">
+	<a href="/"><div class="logotop"><img class="hidden" src="src/assets/images/logo.vida.black.png" width="100%" height="auto" alt="" /></div></a>
 	<nav>
 		<ul class="dropdown">
 			<li><a href="/casa">CASA</a></li>
@@ -14,6 +14,7 @@
             <li><a href="/registro">REGISTRO</a></li>
 	  	</ul>
 	</nav>
+	
 </div>
 <!-- MENU NORMAL-->
 
@@ -36,6 +37,8 @@
 	</ul>
 </nav2>
 <!-- MENU MOVIL-->
+<div class="lineHeader"></div>
+
 </template>
 
 <style scoped>
@@ -48,4 +51,5 @@
 .hidden{
     visibility: hidden;
 }
+
 </style>

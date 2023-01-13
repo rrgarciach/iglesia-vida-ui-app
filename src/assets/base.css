@@ -43,12 +43,13 @@
   --color-text-white-to-black: var(--vt-c-white);
   --color-text-black-to-white: var(--vt-c-black);
   --color-text-black-to-grey: var(--vt-c-black);
-
+  --color-line-header:var(--vt-c-white-soft);
 
   --section-gap: 160px;
 
   --logo: var(--vt-c-logo-black-url);
   --logo-central: var(--vt-c-logo-central-black-url);
+  
 
 }
 
@@ -66,7 +67,7 @@
     --color-text-white-to-black: var(--vt-c-black);
     --color-text-black-to-white: var(--vt-c-white-grey);
     --color-text-black-to-grey: var(--vt-c-grey);
-
+    --color-line-header:var(--vt-c-grey);
 
 
     --logo: var(--vt-c-logo-white-url);

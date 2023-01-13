@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             
             <li><a href="/" class="button primary padd"><FontAwesomeIcon icon="fa-solid fa-home"></FontAwesomeIcon> Regresar</a></li>
         </ul>
+        <br/>
         <!-- One -->
         <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
             <div class="content">

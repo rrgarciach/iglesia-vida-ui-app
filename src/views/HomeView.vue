@@ -7,7 +7,6 @@ import axios from "axios"
 export default defineComponent({
   data() {
     return{
-      content:{},
       htmlYT: {
         title: "",
         videoID: "",
@@ -17,10 +16,11 @@ export default defineComponent({
   },
   methods:{
     async fetchYT(){
-      const response = await axios.get('https://iglesiavida.mx/youtube.api.main2.php')
-      this.htmlYT = response.data
+      const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLRhHzyryO-il5i8aKlEl1C9Eef_7aNlXr&key=AIzaSyDPnEN7aJwcq5yRZg2j2hGwJ--JUfjfPWc')
+      
+      this.htmlYT.title = response.data.items[0].snippet.title
+      this.htmlYT.videoID = response.data.items[0].snippet.resourceId.videoId
       this.iframeYT = '<iframe width="100%" height="100%" style="max-width: 1280px; max-height: 720px;" src="https://www.youtube.com/embed/'+this.htmlYT.videoID+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      console.log(this.htmlYT)
     }
   },
   created: function() {
@@ -68,8 +68,8 @@ export default defineComponent({
             </a>
             </div>
             <div class="split">
-              <h3 style="letter-spacing: 2px;">Último mensaje</h3>
-              <div class="video-container">
+              <h4 style="letter-spacing: 2px;">Último mensaje</h4>
+              <div class="video-containerMain">
                 <div class="frame" v-html="iframeYT"></div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default defineComponent({
 		<br><br>
 			<h2 style="color: #666; letter-spacing: 10px;">DAR</h2>
 			<H4 style="color: #666; letter-spacing: 10px;">TENEMOS DIFERENTES FORMAS DE DAR</H4>
-			<a href="/dar"><div class="boton" style="max-width: 400px;">VER OPCIONES</div></a>
+			<a href="/dar"><div class="boton">VER OPCIONES</div></a>
 		</section>
 	
 		<section style="overflow: auto; clear: both;">
@@ -180,11 +180,12 @@ export default defineComponent({
   }
   .boton{
     width: 50%;
-    min-width: 300px;
+    min-width: 220px;
     background: var(--color-text-black-to-white);
     color: var(--color-text-white-to-black);
     padding: 15px;
     margin: 25px auto;
+    letter-spacing: 10px; 
   }
   .fotolinea{
     padding-top:65px;
@@ -223,12 +224,12 @@ export default defineComponent({
 			padding: 10px;
 	}
 }
-.video-container {
+.video-containerMain {
 position: relative;
 padding-bottom: 56.25%; /* 16:9 */
 height: 0;
 }
-.video-container .frame {
+.video-containerMain .frame {
     position: absolute;
     top: 0;
     left: 0;

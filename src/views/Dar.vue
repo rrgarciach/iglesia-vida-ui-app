@@ -2,10 +2,11 @@
 </script>
 
 <template>
-     <div class="title"><h2>¿Cómo puedes dar tu diezmo y ofrenda?</h2></div>
+     
     <section class="wrapper style1 align-center">
        
             <div class="inner">
+                <div class="title"><div class="h2">¿Cómo puedes dar tu diezmo y ofrenda?</div></div>
                 <p style="font-size: 25px;">Te presentamos varias formas en que puedes seguir participando con tus diezmos y ofrendas.</p>
                 <div class="items style1 medium onscroll-fade-in">
                     
@@ -47,13 +48,14 @@
 </template>
 
 <style scoped>
+
 .title{
     text-align: center;
     padding: 0px;
-    margin: 0px;
-    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
     display: block;
-    clear: left;
+    font-size: 40px;
 }
 
 @media screen and (max-width:1000px){

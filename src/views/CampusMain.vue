@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm.vue';
 <template>
     
     <div class="clear">
-        <h3>Actualmente tenemos 4 ubicaciones en distintas ciudades</h3>
+        <div class="h2">Actualmente tenemos 4 ubicaciones en distintas ciudades</div>
     </div>    
  
 				
@@ -49,6 +49,12 @@ import ContactForm from '@/components/ContactForm.vue';
         clear: left;
         padding: 20px;
     }
+    .h2{
+        width: 100%;
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
     a{
         color: #fff;
         text-decoration:none;
@@ -57,6 +63,7 @@ import ContactForm from '@/components/ContactForm.vue';
         letter-spacing:2px;
         color: var(--color-text-black-to-white);
         text-align: center;
+        display: block;
     }
     p{
         letter-spacing:2px;
@@ -91,6 +98,9 @@ import ContactForm from '@/components/ContactForm.vue';
         text-align: center; 
         margin: 30px; 
         clear: both;
+    }
+    .h2{
+        font-size: 20px;
     }
     }
     @media screen and (max-width: 480px) {
