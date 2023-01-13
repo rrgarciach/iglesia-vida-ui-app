@@ -1,7 +1,7 @@
 .menucontain{
 	background: var(--color-background);
 	width: 100%;
-	height: 144px;
+	height: 180px;
 	font-family: 'Lemon/Milk light Regular';
 	letter-spacing: 2px;
 }
@@ -735,6 +735,7 @@ height: 100%;
 
 
 @media screen and (max-width:1200px){
+	
 	ul.dropdown li{ 
 	font-size: 17px;
   	float: left; 

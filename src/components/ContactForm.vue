@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <section class="wrapper style1 align-center" style="margin-top: 0px; clear: both; background: #e9e9e9;">
+    <section class="wrapper style1 align-center" style="margin-top: 0px; clear: both;">
 			<br><br>
-			<div class="inner medium" style="padding: 10px;">
+			<div class="inner medium text-color" style="padding: 10px;">
 				<h2 style="letter-spacing: 10px;">Escríbenos</h2>
 				<form method="post" name="formdata" id="formdata">
 					<div class="fields">
@@ -32,5 +32,11 @@
 		</section>
 </template>
 
-<style>
+<style scoped>
+h2{
+	color: var(--color-text-black-to-white);
+}
+label{
+	color: var(--color-text-black-to-white);
+}
 </style>

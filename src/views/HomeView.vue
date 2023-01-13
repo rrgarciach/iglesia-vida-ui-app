@@ -30,13 +30,10 @@ export default defineComponent({
 </script>
 
 <template>
+	<img class="mainpic" src="src/assets/images/fotomain.png" alt=""/>
   <main>
     <!-- Wrapper -->
 		<div id="wrapper" class="divided text-separation">
-			<div id="mainpic">
-			  <img src="src/assets/images/fotomain.png" width="100%" height="auto" alt=""/>
-		  </div>
-
       <div class="wrapper style1 align-center" style="margin-bottom: 0px; overflow:auto;">
         <div class="inner">
           <h3 style="letter-spacing: 10px; color: #666;">SE PARTE DE NUESTRAS REUNIONES
@@ -46,41 +43,36 @@ export default defineComponent({
           <div class="split" style="border-right: 0px solid #555;"><h4 style="color: #666; letter-spacing: 10px;">PRESENCIALES</h4>
             
             <!--<a href="asistencia/index.php?campus=1">-->
-            <a href="campus-delicias/">
+            <a href="/campus-delicias">
               <div class="boton">
               DELICIAS
               </div>
             </a>
             <!--<a href="asistencia/index.php?campus=2">-->
-            <a href="campus-cuauhtemoc/">
+            <a href="/campus-cuauhtemoc">
               <div class="boton">
                 CUAUHTÉMOC
               </div>
             </a>
             <!--<a href="asistencia/index.php?campus=3">-->
-            <a href="campus-chihuahua/">
+            <a href="/campus-chihuahua">
               <div class="boton">
                 CHIHUAHUA
               </div>
             </a>
             <!--<a href="asistencia/index.php?campus=4">-->
-            <a href="campus-parral/">
+            <a href="/campus-parral">
               <div class="boton">
                 PARRAL
               </div>
             </a>
             </div>
-            
-            
-              <div class="split">
-                
-                <h3 style="letter-spacing: 2px;">{{ htmlYT.title }}</h3>
-                <div class="video-container">
-                  
-                  <div class="frame" v-html="iframeYT"></div>
-                  
-                </div>
+            <div class="split">
+              <h3 style="letter-spacing: 2px;">Último mensaje</h3>
+              <div class="video-container">
+                <div class="frame" v-html="iframeYT"></div>
               </div>
+            </div>
         </div>
       </div>
     </div>
@@ -117,7 +109,15 @@ export default defineComponent({
 </template>
 
 <style scoped>
-body
+
+.inner{
+  letter-spacing: 10px;
+}
+.mainpic{
+  background: red;
+  width: 100%;
+  height: auto;
+}
   .text-separation{
     letter-spacing: 10px;
   }
@@ -143,7 +143,20 @@ body
   .hidden{
     visibility: hidden;
   }
-  
+
+  .central{
+    margin: 0 auto; 
+    text-align: center; 
+    margin: 30px; 
+    clear: both;
+    background-image: var(--logo-central);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  h3{
+    color: var(--color-text-black-to-white)
+  }
   @media screen and (max-width: 900px) {
     .fotos{
         height: 130px;
@@ -220,6 +233,6 @@ height: 0;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98%;
 }
 </style>

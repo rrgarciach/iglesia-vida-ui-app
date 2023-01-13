@@ -1,3 +1,5 @@
+import CampusMainVue from '@/views/CampusMain.vue'
+import CasaVue from '@/views/Casa.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import DarVue from '../views/Dar.vue'
 import HomeView from '../views/HomeView.vue'
@@ -14,6 +16,22 @@ const router = createRouter({
       path: '/dar',
       name: 'dar',
       component: DarVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/casa',
+      name: 'casa',
+      component: CasaVue
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+    },
+    {
+      path: '/campus',
+      name: 'campus',
+      component: CampusMainVue
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

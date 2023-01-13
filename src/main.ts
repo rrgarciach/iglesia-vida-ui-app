@@ -18,10 +18,12 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faMoneyCheckDollar } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 
 /* add icons to the library */
-library.add(faCreditCard,faMoneyCheckDollar,faMoneyCheck,faMoneyBill,faYoutube,faInstagram,faFacebookF)
+library.add(faCreditCard,faMoneyCheckDollar,faMoneyCheck,faMoneyBill,faYoutube,faInstagram,faFacebookF,faHome)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)
